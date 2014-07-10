@@ -1,0 +1,44 @@
+create View seleccionados as
+select * from colaboradores where seleccion1='t' or seleccion2='t' or seleccion3='t';
+
+create View View_selecionados_coordinacionGeneral as
+select * from colaboradores where
+(seleccion1='t' and id_area1=1) or
+(seleccion2='t' and id_area2=1) or
+(seleccion3='t' and id_area3=1);
+
+create View View_selecionados_tunel as
+select * from colaboradores where
+(seleccion1='t' and id_area1=2) or
+(seleccion2='t' and id_area2=2) or
+(seleccion3='t' and id_area3=2);
+
+create View View_selecionados_dinamicas as
+select * from colaboradores where
+(seleccion1='t' and id_area1=3) or
+(seleccion2='t' and id_area2=3) or
+(seleccion3='t' and id_area3=3);
+
+create View View_selecionados_concursos as
+select * from colaboradores where
+(seleccion1='t' and id_area1=4) or
+(seleccion2='t' and id_area2=4) or
+(seleccion3='t' and id_area3=4);
+
+create View View_selecionados_alimentacion as
+select * from colaboradores where
+(seleccion1='t' and id_area1=5) or
+(seleccion2='t' and id_area2=5) or
+(seleccion3='t' and id_area3=5);
+
+create View View_selecionados_registroVisual as
+select * from colaboradores where
+(seleccion1='t' and id_area1=6) or
+(seleccion2='t' and id_area2=6) or
+(seleccion3='t' and id_area3=6);
+
+create View View_selecionados_audio as
+select * from colaboradores where
+(seleccion1='t' and id_area1=7) or
+(seleccion2='t' and id_area2=7) or
+(seleccion3='t' and id_area3=7);
